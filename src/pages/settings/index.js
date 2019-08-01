@@ -6,9 +6,9 @@
 
 import React, { Component } from 'react';
 import { inject, observer } from 'mobx-react';
-import { Button } from 'antd';
+import { Button } from 'antd-mobile';
 import PropTypes from 'prop-types';
-import { Card } from 'antd';
+import { Card } from 'antd-mobile';
 
 @inject('globalModel')
 @observer

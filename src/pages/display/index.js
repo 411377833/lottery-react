@@ -6,7 +6,7 @@
 
 import React, { Component } from 'react';
 import { observer } from 'mobx-react';
-import { Button, Table } from 'antd';
+import { Button } from 'antd-mobile';
 import DisplayModel from './model';
 
 const model = new DisplayModel();
@@ -52,14 +52,14 @@ export default class Display extends Component {
                 </div>
                 <Button style={{ marginBottom: 20 }} type="primary" onClick={ () => model.getListData() }>重新查询</Button>
                 <Button style={{ marginLeft: 30, marginBottom: 20 }} onClick={ () => this.props.history.goBack() }>返回</Button>
-                <Table
+                {/* <Table
                     title={ tableTitle }
                     columns={ columns }
                     dataSource={ listData.slice() }
                     loading={ loading }
                     bordered
                     rowKey={ ({ address, number }) => address + number }
-                />
+                /> */}
             </div>
         )
     }

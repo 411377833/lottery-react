@@ -1,9 +1,10 @@
 import React from 'react';
+import "babel-polyfill";
 import ReactDom from 'react-dom';
 import { Provider } from 'mobx-react'
-import { LocaleProvider } from 'antd';
 import { HashRouter } from 'react-router-dom';
-import zh_CN from 'antd/lib/locale-provider/zh_CN';
+import enUS from 'antd-mobile/lib/locale-provider/en_US';
+import {LocaleProvider} from 'antd-mobile';
 import 'moment/locale/zh-cn';
 
 import GlobalModel from './GlobalModel';
@@ -14,7 +15,7 @@ const globalModel = new GlobalModel();
 ReactDom.render(
     // 使用 Provider 将 globalModel 传递给包裹住的所有组件及子组件
     <Provider globalModel={ globalModel }>
-        <LocaleProvider locale={zh_CN}>
+        <LocaleProvider locale={enUS}>
             <HashRouter>
                 <App />
             </HashRouter>

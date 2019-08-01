@@ -5,7 +5,7 @@
  */
 
 import React from 'react'
-import { Button } from "antd";
+import { Button } from "antd-mobile";
 
 export default ({ history }) => {
     return (

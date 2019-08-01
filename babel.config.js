@@ -16,7 +16,7 @@ module.exports = (api) => {
             [
                 "import",
                 {
-                    "libraryName": "antd",
+                    "libraryName": "antd-mobile",
                     "style": true
                 }
             ],
